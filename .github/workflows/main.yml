@@ -17,5 +17,13 @@ jobs:
 
       - name: Build Geode mod
         uses: geode-sdk/build-geode-mod@main
+        id: build
         with:
-          platform: android64
+          target: Android64
+
+      - name: Upload compiled Geode mod
+        uses: actions/upload-artifact@v4
+        with:
+          name: AutoGenLevel-Android64
+          path: ${{ steps.build.outputs.build-output }}
+          if-no-files-found: error
