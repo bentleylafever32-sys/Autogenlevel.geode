@@ -1,0 +1,53 @@
+{
+  "geode": "5.11.2",
+  "gd": {
+    "win": "2.2081",
+    "android": "2.2081",
+    "mac": "2.2081",
+    "ios": "2.2081"
+  },
+  "id": "nextbot.autolevelgen",
+  "name": "Auto Level Generator",
+  "version": "v1.5.0",
+  "developer": "NextBot",
+  "description": "Procedural Geometry Dash editor generator with Regular, Hard, Extreme, Top 1-style, and deliberately impossible presets, seeded randomness, difficulty ramps, and safe generation failure handling.",
+  "settings": {
+    "seed": {
+      "name": "Seed (0 = random)",
+      "type": "int",
+      "default": 0,
+      "min": 0,
+      "max": 999999
+    },
+    "segments": {
+      "name": "Number of segments",
+      "type": "int",
+      "default": 14,
+      "min": 4,
+      "max": 40,
+      "control": {
+        "slider": true
+      }
+    },
+    "difficulty": {
+      "name": "Difficulty (1-5)",
+      "type": "int",
+      "default": 2,
+      "min": 1,
+      "max": 5,
+      "control": {
+        "slider": true
+      }
+    },
+    "decor": {
+      "name": "Add decoration",
+      "type": "bool",
+      "default": true
+    },
+    "never_repeat": {
+      "name": "Avoid repeating sections",
+      "type": "bool",
+      "default": true
+    }
+  }
+}
