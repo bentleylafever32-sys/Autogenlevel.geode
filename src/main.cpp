@@ -315,9 +315,9 @@ class $modify(AutoGenEditorUI, EditorUI) {
 		if (!btn) return true;
 		btn->setID("nextbot.autolevelgen/button");
 		menu->addChild(btn);
-		auto win = CCDirector::get()->getWinSize();
-		menu->setPosition(ccp(win.width - 55.f, win.height - 30.f));
-		menu->setScale(0.7f);
+	auto win = CCDirector::get()->getWinSize();
+menu->setPosition(ccp(win.width * 0.32f, win.height - 120.f));
+menu->setScale(0.85f);
 		this->addChild(menu);
 		return true;
 	}
