@@ -22,9 +22,9 @@
     "segments": {
       "name": "Number of segments",
       "type": "int",
-      "default": 14,
+      "default": 24,
       "min": 4,
-      "max": 40,
+      "max": 100,
       "control": {
         "slider": true
       }
